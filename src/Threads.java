@@ -1,9 +1,20 @@
 public class Threads {
     public static void main(String[] args) {
-        for (int i = 0; i < 4; i++) {
-            Thread t1 = new Thread(new computation1());
-            t1.start();
-        }
+        // Anonymous classes
+        Thread t1 = new Thread(new Runnable() {
+            public void run() {
+                // code
+                while (true) {
+                    int x = 5;
+                }
+            }
+
+        });
+        t1.start();
+        // for (int i = 0; i < 4; i++) {
+        // Thread t1 = new Thread(new computation1());
+        // t1.start();
+        // }
 
         // computation1 c1 = new computation1();
         // computation2 c2 = new computation2();
