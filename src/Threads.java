@@ -6,11 +6,13 @@ public class Threads {
                 // code
                 while (true) {
                     int x = 5;
+                    System.out.println(x);
                 }
             }
 
         });
         t1.start();
+
         // for (int i = 0; i < 4; i++) {
         // Thread t1 = new Thread(new computation1());
         // t1.start();
