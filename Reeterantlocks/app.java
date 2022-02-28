@@ -7,13 +7,13 @@ public class app {
         Student s2 = new Student();
         test(s1);
         s1.lock.lock();
+        s1.lock.lock();
+        s1.lock.lock();
+        s1.lock.lock();
+        s1.lock.lock();
+        System.out.println(((ReentrantLock) s1.lock).getHoldCount());
+        s1.lock.unlock();
         System.out.println(s1.toString());
-        try {
-
-        } finally {
-            // TODO: handle exception
-            s1.lock.unlock();
-        }
     }
 
     public static void test(Student s) {
