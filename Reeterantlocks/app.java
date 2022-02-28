@@ -8,6 +8,12 @@ public class app {
         test(s1);
         s1.lock.lock();
         System.out.println(s1.toString());
+        try {
+
+        } finally {
+            // TODO: handle exception
+            s1.lock.unlock();
+        }
     }
 
     public static void test(Student s) {
