@@ -16,6 +16,7 @@ class VThread extends Thread {
 
     public VThread(ticket t) {
         this.t = t;
+        Math.log(5);
     }
 
     public ticket getT() {
@@ -24,6 +25,7 @@ class VThread extends Thread {
 
     public void setT(ticket t) {
         this.t = t;
+
     }
 
     public void run() {
