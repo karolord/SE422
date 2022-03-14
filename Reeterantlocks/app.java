@@ -2,7 +2,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class app {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Student s1 = new Student();
         Student s2 = new Student();
         test(s1);
@@ -13,6 +13,7 @@ public class app {
         s1.lock.lock();
         System.out.println(((ReentrantLock) s1.lock).getHoldCount());
         s1.lock.unlock();
+        s1.lock.lockInterruptibly();
         System.out.println(s1.toString());
     }
 

@@ -3,7 +3,8 @@
         "src",
         "hw",
         "ThreadSafety",
-        "Reeterantlocks"
+        "Reeterantlocks",
+        "ThreadPool"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
