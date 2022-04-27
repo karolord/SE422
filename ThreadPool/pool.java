@@ -4,7 +4,8 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 public class pool {
     public static void main(String[] args) {
-
+        ExecutorService pool = Executors.newFixedThreadPool(5);
+        ExecutorService poo1l = Executors.newSingleThreadExecutor();
         Runnable r = new Runnable() {
             @Override
             public void run() {
